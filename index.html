@@ -4,8 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://css.gg/css" >
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
@@ -29,25 +30,31 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         </div>
         <div class="w3-container">
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-deep-purple"></i>Eng. Químico</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-deep-purple"></i>Rio de Janeiro, RJ</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-deep-purple"></i>Rio de Janeiro, RJ / Recreio, MG</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-deep-purple"></i>carvalho.engquim20@gmail.com</p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-deep-purple"></i>(32) 99811-4575</p>
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-deep-purple"></i>Habilidades</b></p>
-          <p>Programação</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-deep-purple" style="width:70%">70%</div>
+          <button onclick="w3Show('programacao_description')" class="w3-button w3-block">Programação</button>
+          <div id="programacao_description" class="w3-hide">
+            <p>Utilização de diversos tipos de linguagens de programação e estratégias lógicas para solução de problemas. A utilização da programação dá liberdade para criar soluções complexas envolvendo diversos softwares, por exemplo, é possível utilizar o Python para integrar o PI System, PIPESIM e excel num único programa.</p>
           </div>
-          <p>Foco</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-deep-purple" style="width:100%">
-              <div class="w3-center w3-text-white">100%</div>
-            </div>
+          <button onclick="w3Show('pisystem_description')" class="w3-button w3-block">PI System</button>
+          <div id="pisystem_description" class="w3-hide">
+            <p>A solução PI System engloba diversos subsistemas como PI Vision, PI Datalink, PI System Explorer, entre outros. Com o conhecimento de todos esses sistemas é possível criar análises de dados integradas com soluções qualitativas através de gráficos e interfaces e soluções quantitativas através de tabelas e funções estatísticas.</p>
           </div>
-          <p>Métodos Numéricos</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-deep-purple" style="width:75%">75%</div>
+          <button onclick="w3Show('pipesim_description')" class="w3-button w3-block">PIPESIM</button>
+          <div id="pipesim_description" class="w3-hide">
+            <p>Software de simulação de escoamento multifásico em regime permanente. Através da utilização do PIPESIM é possível entender o comportamento dos fluidos através da geração de perfis de pressão e temperatura, além disso, é possível modelar diversos tipos de poços de petróleo e layouts de produção.</p>
+          </div>
+          <button onclick="w3Show('olga_description')" class="w3-button w3-block">OLGA</button>
+          <div id="olga_description" class="w3-hide">
+            <p>Simulador de escoamento multifásico transiente. Um dos softwares mais robustos para modelagem e simulação do escoamento, apresenta diversas soluções para problemas operacionais como passagem de PIG, pressurização/despressurização de linhas, escoamento em slugs, partida e parada de poços, dentre outras.</p>
+          </div>
+          <button onclick="w3Show('hysys_description')" class="w3-button w3-block">HYSYS</button>
+          <div id="hysys_description" class="w3-hide">
+            <p>Software para modelagem de operações unitárias. Através do HYSYS é possível modelar e simular diversas operações unitárias amplamente utilizadas na indústria química/petroquímica como cálculo de separação em vaso flash, separação em torrer de destilação e de contato, aquecimento/resfriamento de fluidos. Além disso, é possível realizar diversas análises do fluido através de sua composição.</p>
           </div>
           <br>
 
@@ -71,6 +78,15 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <div class="w3-twothird">
     
       <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-deep-purple"></i>Sobre mim</h2>
+        <div class="w3-container">
+          <p>Um amante de todo tipo de conhecimento e descobertas, entendo a vida como uma grande escola que podemos aprender sobre a natureza, sobre nós mesmos e sobre toda a humanidade.</p>
+          <p>Sou admirado por estudar programação, entender o escoamento de fluidos, jogar um bom jogo, entender o princípio das coisas e beber um bom cafezinho.</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-deep-purple"></i>Experiência Profissional</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Engenheiro de Elevação e Escoamento / Karoon Energy</b></h5>
@@ -80,18 +96,58 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         </div>
       </div>
 
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-deep-purple"></i>Educação</h2>
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-deep-purple"></i>Educação</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Mestrado em Engenharia Química / UERJ</b></h5>
           <h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2021 - <span class="w3-tag w3-deep-purple w3-round">Em andamento</span></h6>
-          <p>Mestrado em engenharia química em andamento. Foi desenvolvido modelo de escoamento multifásico composicional e aplicados métodos numéricos para simulação do escoamento. Além disso, redes neurais foram utilziadas para criação de modelos substitutos para utilização em algoritmos de otimização.</p>
+          <p>Mestrado em engenharia química em andamento. Foi desenvolvido modelo de escoamento multifásico composicional e aplicados métodos numéricos para simulação do escoamento. Além disso, redes neurais foram utilizadas para criação de modelos substitutos para utilização em algoritmos de otimização.</p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Graduação em Engenharia Química / UERJ</b></h5>
           <h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Set 2014 - Dez 2020</h6>
-          <p> </p><br>
+          <p> </p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-code fa-fw w3-margin-right w3-xxlarge w3-text-deep-purple"></i>Programação</h2>
+        <div class="w3-container">
+          <p>Utilizarei esse tópico apenas para mostrar minha jornada pela programação indicando algumas linguagens que já tive contato e mostrar um pouco onde quero chegar.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Scilab</b></h5>
+          <p>Aqui foi onde tudo começou! Tive contato com programação pela primeira vez utilizando Scilab para resolução de problemas numéricos, a linguagem é completamente intuitiva para sua utilização a partir de um ponto de vista da álgebra vetorial.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Python</b></h5>
+          <p>Me apaixonei pela linguagem Python desde o primeiro uso, junto com a pandemia veio a vontade de aprender cada vez mais a programar. Antes apenas aplicava a programação para métodos numéricos, porém quando descobri o Python um universo inteiro de possibilidades se abriram para mim.</p>
+          <p>Durante minha jornada no Python me deparei com diversas bibliotecas open-source que despertaram imensamente minha curiosidade para apender coisas novas.
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>C/C++</b></h5>
+          <p>Já segui uma linha de aprendizado para aprender essa língua mãe, mas não me aprofundei nos mais interessantes detalhes, como os temidos ponteiros. Ainda aprenderei essa lingaguem para otimização e implementação de algoritmos mais rápidos e robustos.</p><br>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>HTML, CSS, javascript</b></h5>
+          <p>Sei apenas o básico de javascript, html e css, o suficiente para criar e modificar esse site. Minha curiosidade e admiração pela linguagem javascript começou com o canal no youtube <a href="https://www.youtube.com/c/TheCodingTrain">The Coding Train</a>, no qual o autor cria conteúdo de forma didática, bem humorada e dinâmica.</p><br>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Bancos de Dados</b></h5>
+          <p>Já passei pelo básico de bancos de dados assim como alguns ensinamentos sobre modelagem de dados especificando as relações entre possíveis conjuntos. Ainda vou me aprofundar na construção de banco de dados para realização de interfaces entre frontend e backend assim como estruturação de dados (nesse caso seria basicamente parar de tratar planilhas excel como bancos de dados e utilizar ferramentas mais sofisticadas).</p><br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-python fa-fw w3-margin-right w3-xxlarge w3-text-deep-purple"></i>Python</h2>
+        <div class="w3-container">
+          <p>Por ser minha linguagem de programação dominante ela merece um tópico especial.</p>
+          <hr>
         </div>
       </div>
 
@@ -114,6 +170,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <i class="fa fa-linkedin w3-hover-opacity"></i>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
+
+<script src="script1.js"></script>
 
 </body>
 </html>
